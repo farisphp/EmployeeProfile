@@ -56,4 +56,14 @@ class EmployeeController extends Controller
 
         return redirect('/employee');
     }
+
+    public function search(Request $request)
+    {
+        $search = $request->search;
+
+        $employee = DB::table('employees')->where('EmployeeName','like',"%".$search."%")
+        ->paginate();
+
+        return view('employee/index',['employee' => $employee]);
+    }
 }
