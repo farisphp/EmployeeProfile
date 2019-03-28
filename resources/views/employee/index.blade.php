@@ -15,6 +15,12 @@
 	<h3>Profile of Employees</h3>
  
 	<a href="/employee/add"> + New Employee Profile</a>
+	<br/>
+	<p>Search Employee</p>
+	<form action="/employee/search" method="GET">
+	<input type="text" name="search" placeholder="Seach employee..." value="{{old('cari')}}">
+	<input type="submit" value="Search">
+	</form>
 	
 	<br/>
 	<br/>
