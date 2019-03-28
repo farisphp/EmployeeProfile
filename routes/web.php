@@ -26,3 +26,4 @@ Route::post('/employee/store','EmployeeController@store');
 Route::get('/employee/edit/{id}','EmployeeController@edit');
 Route::post('/employee/update','EmployeeController@update');
 Route::get('/employee/delete/{id}','EmployeeController@delete');
+Route::get('/employee/search','EmployeeController@search');
